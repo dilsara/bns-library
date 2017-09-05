@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>{{title}}</h1>
+  <h4>{{myHeroes}}</h4>
+</div>
+  <br/>
+  <ul>
+    <li *ngFor="let hero of heroes">
+      {{hero}}
+    </li>
+  </ul>
+  <br/>
+  <table border="1">
+    <tr>
+      <th>Deduction</th>
+      <th>Present</th>
+      <th>Past</th>
+    </tr>
+    <tr>
+      <td *ngFor="let hero of heroes">{{hero}}</td>
+    </tr>
+  </table>
+<button md-button (click)="openDialog()">Open dialog</button>
